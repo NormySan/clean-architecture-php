@@ -1,0 +1,30 @@
+{
+    "name": "oddhill/clean-architecture-php",
+    "description": "A clean architecture example.",
+    "type": "project",
+    "license": "UNLICENSED",
+    "authors": [
+        {
+            "name": "Christoffer Palm",
+            "email": "christoffer.palm@oddhill.se"
+        }
+    ],
+    "scripts": {
+        "test": "pest"
+    },
+    "require" : {
+        "php" : ">=8.0",
+        "sendgrid/sendgrid": "^7.10",
+        "symfony/http-foundation": "^5.3",
+        "symfony/validator": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clean\\": "src/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.20",
+        "pestphp/pest-plugin-mock": "^1.0"
+    }
+}
